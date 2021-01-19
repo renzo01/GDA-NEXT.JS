@@ -14,7 +14,7 @@ const ProductCard = ({ img, title, description, price, offer }) => {
           .product-card {
             border: solid 1px;
             width: 10rem;
-            margin-bottom: 10px;
+            margin: auto;
           }
           .product-card h3 {
             text-align: center;

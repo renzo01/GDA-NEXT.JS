@@ -1,12 +1,14 @@
 import ShowProducts from '../components/commons/ShowProducts';
 import UserLayout from '../components/commons/layouts/userLayout';
-//import CarrouselOfferProducts from '../components/commons/CarrouselOfferProducts';
+import Head from 'next/head';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>GDA - INICIO</title>
+      </Head>
       <div className="main-page">
         <UserLayout>
-          {/*<CarrouselOfferProducts />*/}
           <ShowProducts title="PRODUCTOS DESTACADOS" />
         </UserLayout>
       </div>

@@ -64,6 +64,7 @@ const ShowProducts = ({ title }) => {
           .show-products-content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 15px;
           }
         `}
       </style>
