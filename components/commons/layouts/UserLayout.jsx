@@ -22,7 +22,7 @@ function UserLayout({ children }) {
             margin-top: auto;
           }
           .content {
-            height: 82vh;
+            height: 100vh;
           }
         `}
       </style>
