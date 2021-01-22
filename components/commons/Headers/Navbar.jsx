@@ -1,28 +1,37 @@
 import React from 'react';
 import Button from '../Button';
 import Image from 'next/image';
+import Link from 'next/link';
 const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <div className="navbar-logo">
-          <div className="logo-container">
-            <Image
-              src="/image/gda-icon.png"
-              layout="fill"
-              objectFit="contain"
-            />
+        <Link href="/">
+          <div className="navbar-logo">
+            <div className="logo-container">
+              <Image
+                src="/image/gda-icon.png"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+            <h1 className="title-logo">GDA SOLUCIONES</h1>
           </div>
-          <h1 className="title-logo">GDA SOLUCIONES</h1>
-        </div>
+        </Link>
         <div className="navbar-links">
           <p>PRODUCTOS</p>
-          <p>CONTACTOS</p>
+          <Link href="/contact">
+            <p className="navbar-link">CONTACTOS</p>
+          </Link>
           <Button type="button-sing-in" title="Ingresar" />
           <Button type="button-sing-up" title="Registrarse" />
         </div>
       </div>
       <style jsx>{`
+        .navbar-link:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
         .navbar-links {
           display: flex;
           gap: 10px;
@@ -33,6 +42,7 @@ const Navbar = () => {
           height: 64px;
           position: relative;
         }
+
         .title-logo {
           color: white;
           -webkit-text-stroke-color: #212121;
@@ -52,6 +62,9 @@ const Navbar = () => {
           gap: 10px;
           align-items: center;
           height: 68px;
+        }
+        .navbar-logo:hover {
+          cursor: pointer;
         }
       `}</style>
     </>

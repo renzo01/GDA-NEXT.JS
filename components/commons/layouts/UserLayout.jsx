@@ -19,10 +19,9 @@ function UserLayout({ children }) {
             flex-direction: column;
           }
           .footer {
-            margin-top: auto;
           }
           .content {
-            height: 100vh;
+            height: 100%;
           }
         `}
       </style>

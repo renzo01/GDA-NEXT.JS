@@ -55,6 +55,7 @@ const ShowProducts = ({ title }) => {
           .show-products {
             width: 90%;
             margin: auto;
+            margin-bottom: 20px;
           }
 
           .show-products-title {
