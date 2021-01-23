@@ -23,8 +23,8 @@ const Navbar = () => {
           <Link href="/contact">
             <p className="navbar-link">CONTACTOS</p>
           </Link>
-          <Button type="button-sing-in" title="Ingresar" />
-          <Button type="button-sing-up" title="Registrarse" />
+          <Button style="button-sing-in" title="Ingresar" />
+          <Button style="button-sing-up" title="Registrarse" />
         </div>
       </div>
       <style jsx>{`

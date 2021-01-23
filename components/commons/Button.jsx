@@ -1,10 +1,27 @@
 import React from 'react';
-const Button = ({ type, title, ...otherProps }) => {
+const Button = ({ style, title, ...otherProps }) => {
   return (
     <>
-      <div className={type}>{title}</div>
+      <button className={style} {...otherProps}>
+        {title}
+      </button>
       <style jsx>
         {`
+          .button-primary {
+            background: #fbed17;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            -webkit-text-stroke-width: 0.75px;
+            -webkit-text-stroke-color: black;
+            padding: 6px 10px;
+            border-radius: 13px;
+          }
+          .button-primary:hover {
+            background: white;
+            color: black;
+            -webkit-text-stroke-width: 0px;
+          }
           .button-sing-in {
             border-radius: 6px;
             padding-right: 10px;
